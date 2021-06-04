@@ -1,6 +1,6 @@
 
 ## 简介
-本项目旨在提供深度学习实验环境，快速搭建常用的实验环境。我知道你搭环境很快，但是有了它，你可以更快！
+本项目旨在提供深度学习实验环境，快速搭建常用的实验环境。我知道你搭环境很快，但是,有了它你可以更快！
 
 目前已支持以下环境：
 - [x] pytorch1.4
@@ -19,12 +19,14 @@
 
 ## 安装
 
-依次执行一下代码：
+依次执行以下命令：
 ```
 # 下载环境包
 scp -P 44120 -r root@202.197.66.62:/root/commonfile/anaconda3.zip /root/userfolder/
+
 # 解压
 unzip anaconda3.zip
+
 # 激活环境
 eval "$(./anaconda3/bin/conda shell.bash hook)"
 ```
@@ -39,23 +41,31 @@ conda activate pytorch1.6
 
 
 ## 常见问题
+
 `ImportError: libGL.so.1: cannot open shared object file: No such file or directory`解决方法：
 
 ```
-# apt换源 | 把apt源改为清华镜像，修改sources.list文件内容为[清华源](https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/)，版本选择16.04
-sudo vim /etc/apt/sources.list # https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/
+apt-get install libgl1-mesa-glx -y
+```
 
-#
+如果遇到网络问题，无法下载，建议换源
+```
+# apt换源 | 把apt源改为清华镜像，修改sources.list文件内容为清华源，版本选择16.04
+sudo vim /etc/apt/sources.list # https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/
+```
+然后执行
+```
 sudo apt-get update
 apt-get install libgl1-mesa-glx -y
-
 ```
 
 
 ## 说明
-有xp4账号的同学把端口号改成自己的，没有的同学找赵杨要密码。
+环境包放在xp4上，有xp4账号的同学把端口号改成自己的，没有的同学找赵杨要密码。
 
 
+<!--
 ## TODO
 pycharm专业版 | 代码同步服务器教程
 git版本管理教程
+-->
