@@ -40,28 +40,31 @@ unzip anaconda3.zip
 eval "$(./anaconda3/bin/conda shell.bash hook)"
 ```
 
+设置开机启动
+```
+echo 'export PATH=/root/userfolder/anaconda3/bin:$PATH' >> ~/.zshrc
+source ~/.zshrc
+```
 
 ## 使用
 
 激活环境：
 ```
-conda activate mmclassification # source activate mmclassification
+source activate mmclassification # conda activate mmclassification
 ```
 
 
 ## 常见问题
 
+<!--
 ### 重启后无base环境
 
-<<<<<<< HEAD
 重新激活环境：
-=======
-重新激活下：
->>>>>>> 4df938dbf59f673b7a09883c9db2f673d0e7b4f1
 ```
 cd userfolder
 eval "$(./anaconda3/bin/conda shell.bash hook)"
 ```
+-->
 
 ### libGL.so.1
 `ImportError: libGL.so.1: cannot open shared object file: No such file or directory`解决方法：
