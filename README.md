@@ -45,7 +45,7 @@ eval "$(./anaconda3/bin/conda shell.bash hook)"
 
 激活环境：
 ```
-conda activate pytorch1.6
+conda activate mmclassification
 ```
 
 
@@ -71,7 +71,7 @@ apt-get install libgl1-mesa-glx -y
 
 
 ## 说明
-环境包放在xp4上，有xp4账号的同学把端口号改成自己的，没有的同学找赵杨要密码。
+环境包放在xp4上，下载需要xp4账号。有xp4账号的同学把端口号改成自己的，没有的同学找赵杨要密码。
 
 
 <!--
