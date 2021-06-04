@@ -45,11 +45,19 @@ eval "$(./anaconda3/bin/conda shell.bash hook)"
 
 激活环境：
 ```
-conda activate mmclassification
+conda activate mmclassification # source activate mmclassification
 ```
 
 
 ## 常见问题
+
+### 重启后无base环境
+
+重新激活环境：
+```
+cd userfolder
+eval "$(./anaconda3/bin/conda shell.bash hook)"
+```
 
 ### libGL.so.1
 `ImportError: libGL.so.1: cannot open shared object file: No such file or directory`解决方法：
