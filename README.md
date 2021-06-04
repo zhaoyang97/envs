@@ -34,7 +34,7 @@ eval "$(./anaconda3/bin/conda shell.bash hook)"
 
 ## 使用
 
-激活环境
+激活环境：
 ```
 conda activate pytorch1.6
 ```
@@ -48,12 +48,12 @@ conda activate pytorch1.6
 apt-get install libgl1-mesa-glx -y
 ```
 
-如果遇到网络问题，无法下载，建议换源
+如果遇到网络问题，无法下载，建议换源：
 ```
 # apt换源 | 把apt源改为清华镜像，修改sources.list文件内容为清华源，版本选择16.04
 sudo vim /etc/apt/sources.list # https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/
 ```
-然后执行
+然后执行：
 ```
 sudo apt-get update
 apt-get install libgl1-mesa-glx -y
@@ -68,4 +68,6 @@ apt-get install libgl1-mesa-glx -y
 ## TODO
 pycharm专业版 | 代码同步服务器教程
 git版本管理教程
+ddr | idird 数据集介绍、特点、难点
+tct 数据集介绍、划分、特点、难点
 -->
