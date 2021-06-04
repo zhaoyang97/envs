@@ -10,8 +10,8 @@
 各个环境名对应的包版本如下：
 |  环境名            | pytorch | cudatoolkit | mmcv | 说明 |
 |  ---- | ---- | ---- | ---- | ---- |
-| pytorch1.4        | 1.4  | 10.0 | 1.1.5 | 适用于较老版本的mmlab |
-| pytorch1.6        | 1.6  | 10.2 | 1.2.0 | 适用于较新版本的mmlab [mmdetection](https://github.com/open-mmlab/mmdetection)和[mmsegmentation](https://github.com/open-mmlab/mmsegmentation)|
+| pytorch1.4        | 1.4  | 10.0 | 1.1.5 | 适用于较老版本的mmlab系列 |
+| pytorch1.6        | 1.6  | 10.2 | 1.2.0 | 适用于较新版本的[mmdetection](https://github.com/open-mmlab/mmdetection)和[mmsegmentation](https://github.com/open-mmlab/mmsegmentation)|
 | mmclassification  | 1.6  | 10.2 | 1.3.3 | 适用于[mmclassification](https://github.com/open-mmlab/mmclassification) |
 
 推荐使用pytorch1.6
